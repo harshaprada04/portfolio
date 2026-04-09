@@ -1,0 +1,58 @@
+.about { background: #0d1120; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.text p {
+  font-size: 16px;
+  color: #8892a4;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.metaItem { display: flex; flex-direction: column; gap: 3px; font-size: 14px; color: #f0f4ff; font-weight: 500; }
+.metaLabel { font-size: 12px; color: #4f8eff; letter-spacing: 1px; text-transform: uppercase; font-weight: 500; }
+
+.cards { display: flex; flex-direction: column; gap: 16px; }
+
+.card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: rgba(20,25,39,0.6);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 20px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.card:hover { border-color: rgba(79,142,255,0.25); transform: translateX(4px); }
+
+.cardIcon {
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  background: rgba(79,142,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.cardTitle { font-size: 15px; font-weight: 600; color: #f0f4ff; margin-bottom: 4px; font-family: 'Syne', sans-serif; }
+.cardDesc { font-size: 13px; color: #8892a4; line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .meta { grid-template-columns: 1fr; }
+}

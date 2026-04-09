@@ -1,0 +1,77 @@
+.section { background: #0d1120; }
+
+.timeline { position: relative; padding-left: 28px; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px; top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, #4f8eff, #3ecf8e, rgba(255,255,255,0.05));
+}
+
+.item { position: relative; margin-bottom: 36px; }
+
+.dot {
+  position: absolute;
+  left: -24px; top: 24px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--navy2);
+}
+.blue { background: #4f8eff; box-shadow: 0 0 12px rgba(79,142,255,0.5); }
+.green { background: #3ecf8e; box-shadow: 0 0 12px rgba(62,207,142,0.5); }
+.orange { background: #fb923c; box-shadow: 0 0 12px rgba(251,146,60,0.5); }
+
+.card {
+  background: rgba(20,25,39,0.6);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 26px 28px;
+  transition: border-color 0.2s;
+}
+.card:hover { border-color: rgba(79,142,255,0.2); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.role { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: #f0f4ff; margin-bottom: 4px; }
+
+.company { font-size: 14px; font-weight: 600; margin-bottom: 3px; }
+.blueText { color: #4f8eff; }
+.greenText { color: #3ecf8e; }
+.orangeText { color: #fb923c; }
+
+.date { font-size: 13px; color: #8892a4; }
+
+.badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.blueBadge { background: rgba(79,142,255,0.12); color: #7eb3ff; }
+.greenBadge { background: rgba(62,207,142,0.12); color: #3ecf8e; }
+.orangeBadge { background: rgba(251,146,60,0.12); color: #fb923c; }
+
+.points { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+.points li { display: flex; gap: 10px; font-size: 14px; color: #8892a4; line-height: 1.65; }
+.bullet { color: #4f8eff; font-size: 12px; margin-top: 3px; flex-shrink: 0; }
+
+.tech { display: flex; flex-wrap: wrap; gap: 8px; }
+.techTag {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #8892a4;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 11px;
+  border-radius: 6px;
+}

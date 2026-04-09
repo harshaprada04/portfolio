@@ -1,0 +1,78 @@
+.section { background: var(--navy); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: rgba(20,25,39,0.6);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 18px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s, border-color 0.25s;
+}
+.card:hover { transform: translateY(-6px); }
+
+.blue:hover { border-color: rgba(79,142,255,0.35); }
+.green:hover { border-color: rgba(62,207,142,0.35); }
+.teal:hover { border-color: rgba(34,211,238,0.35); }
+.purple:hover { border-color: rgba(167,139,250,0.35); }
+
+.icon {
+  width: 52px; height: 52px;
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.blueIcon { background: rgba(79,142,255,0.12); }
+.greenIcon { background: rgba(62,207,142,0.12); }
+.tealIcon { background: rgba(34,211,238,0.12); }
+.purpleIcon { background: rgba(167,139,250,0.12); }
+
+.title { font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 700; color: #f0f4ff; margin-bottom: 10px; }
+.desc { font-size: 14px; color: #8892a4; line-height: 1.7; flex: 1; margin-bottom: 18px; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.tag {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #8892a4;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 11px;
+  border-radius: 6px;
+}
+
+.links { display: flex; gap: 10px; margin-top: auto; }
+
+.linkOutline, .linkFill {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.linkOutline {
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #8892a4;
+}
+.linkOutline:hover { border-color: rgba(255,255,255,0.3); color: #f0f4ff; }
+
+.linkFill { color: #fff; border: none; }
+.blueFill { background: #4f8eff; }
+.blueFill:hover { background: #3b7ae0; }
+.greenFill { background: #3ecf8e; }
+.greenFill:hover { background: #30b87d; }
+.tealFill { background: #22d3ee; }
+.tealFill:hover { background: #06b6d4; }
+.purpleFill { background: #a78bfa; }
+.purpleFill:hover { background: #8b5cf6; }
