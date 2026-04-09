@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./Contact.module.css";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const contactInfo = [
   {
